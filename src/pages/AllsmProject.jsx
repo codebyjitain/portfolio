@@ -86,11 +86,8 @@ const AllsmProject = () => {
             and a component-driven React frontend.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <a href="#" className="btn-glow flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold">
+            <a href="https://github.com/codebyjitain/AllSM.git" className="btn-glow flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold">
               <Github size={16} /> GitHub Repo
-            </a>
-            <a href="#" className="glass flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold hover:text-[var(--text-color)] transition-colors">
-              <ExternalLink size={16} /> Live Demo
             </a>
           </div>
         </div>

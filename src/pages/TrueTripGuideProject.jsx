@@ -8,14 +8,14 @@ const features = [
   { icon: <Star size={18}/>, title: "Reviews & Ratings", desc: "Authenticated users can rate destinations and leave detailed reviews — moderated by NestJS guards." },
   { icon: <Globe size={18}/>, title: "SEO-Optimized Pages", desc: "Next.js SSR and SSG ensure every destination page is indexed — fast loads and optimal Lighthouse scores." },
   { icon: <Zap size={18}/>, title: "Fast API Layer", desc: "NestJS backend with modular architecture — controllers, services, and DTOs cleanly separated per feature." },
-  { icon: <Database size={18}/>, title: "Persistent Data", desc: "PostgreSQL via TypeORM handles relational trip data — users, trips, destinations, and reviews." },
+  { icon: <Database size={18}/>, title: "Persistent Data", desc: "MongoDB handles trip data — users, trips, destinations, and reviews." },
 ];
 
 const stack = [
   { label: "Next.js", note: "App Router, SSR, SSG" },
   { label: "NestJS", note: "Modular backend" },
   { label: "TypeORM", note: "ORM layer" },
-  { label: "PostgreSQL", note: "Relational DB" },
+  { label: "MongoDB", note: "Non-Relational DB" },
   { label: "Tailwind CSS", note: "Utility styling" },
   { label: "JWT + Guards", note: "Auth & security" },
   { label: "REST APIs", note: "Clean contracts" },
@@ -69,10 +69,7 @@ const TrueTripGuideProject = () => {
             NestJS for a clean, modular backend — both fully typed in TypeScript.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <a href="#" className="btn-glow flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold">
-              <Github size={16} /> GitHub Repo
-            </a>
-            <a href="#" className="glass flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold hover:text-[var(--text-color)] transition-colors">
+            <a href="https://truetripguide.com" className="glass flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold hover:text-[var(--text-color)] transition-colors">
               <ExternalLink size={16} /> Live Site
             </a>
           </div>
@@ -152,8 +149,7 @@ const TrueTripGuideProject = () => {
               <h3 className="font-bold text-white text-lg">NestJS — Backend</h3>
               <p className="text-sm leading-relaxed" style={{ color: "var(--color-3)" }}>
                 Modular architecture means each feature (auth, trips, reviews, users) lives in its own
-                NestJS module — services, controllers, DTOs. Guards handle JWT validation. TypeORM
-                keeps PostgreSQL interactions type-safe and migration-friendly.
+                NestJS module — services, controllers, DTOs. Guards handle JWT validation. 
               </p>
             </div>
           </div>

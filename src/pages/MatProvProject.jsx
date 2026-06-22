@@ -75,10 +75,13 @@ const MatProvProject = () => {
             No clutter. No paywalls. Just solid content.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <a href="#" className="btn-glow flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold">
-              <Github size={16} /> GitHub Repo
+            <a href="https://github.com/codebyjitain/matProv-backend.git" className="btn-glow flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold">
+              <Github size={16} /> GitHub Backend Repo
             </a>
-            <a href="#" className="glass flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold hover:text-[var(--text-color)] transition-colors">
+            <a href="https://github.com/codebyjitain/matProv-frontend.git" className="btn-glow flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold">
+              <Github size={16} /> GitHub Frontend Repo
+            </a>
+            <a href="https://matprov.netlify.app" className="glass flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold hover:text-[var(--text-color)] transition-colors">
               <ExternalLink size={16} /> Live Site
             </a>
           </div>
