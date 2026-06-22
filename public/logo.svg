@@ -1,0 +1,71 @@
+<svg
+  width="128"
+  height="128"
+  viewBox="0 0 128 128"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <!-- Top-left corner -->
+  <path d="M8 24 V8 H24" stroke="#34d399" stroke-width="2" fill="none" />
+
+  <!-- Bottom-right corner -->
+  <path d="M120 104 V120 H104" stroke="#34d399" stroke-width="2" fill="none" />
+
+  <!-- Outer faded circle -->
+  <circle
+    cx="64"
+    cy="64"
+    r="44"
+    stroke="rgba(6,95,70,0.3)"
+    stroke-width="2"
+    fill="none"
+  />
+
+  <!-- Rotating dot group -->
+  <g>
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 64 64"
+      to="360 64 64"
+      dur="3s"
+      repeatCount="indefinite"
+    />
+    <circle cx="64" cy="16" r="4" fill="#34d399">
+      <animate
+        attributeName="opacity"
+        values="0.6;1;0.6"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </circle>
+  </g>
+
+  <!-- Hexagon background -->
+  <polygon
+    points="64 36 88 50 88 78 64 92 40 78 40 50"
+    fill="rgba(17,24,39,0.8)"
+  />
+
+  <!-- Inner hex border -->
+  <polygon
+    points="64 32 92 48 92 80 64 96 36 80 36 48"
+    fill="none"
+    stroke="rgba(52,211,153,0.2)"
+    stroke-width="1"
+  />
+
+  <!-- Text -->
+  <text
+    x="64"
+    y="71"
+    text-anchor="middle"
+    fill="#34d399"
+    font-size="20"
+    font-weight="700"
+    font-family="monospace"
+  >
+    JK
+  </text>
+
+</svg>
